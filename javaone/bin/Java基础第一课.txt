@@ -1,0 +1,50 @@
+Java基础第一课
+
+1.JDK下载
+https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html
+大家后面可以去这个官网上自己下载一个JDK，通过这个官网，了解到java是个跨平台的语言。
+
+2.Java的安装
+
+Java的安装是安装了JDK和运行环境(jre),JVM,工具包.
+Java安装好，我 们在cmd运行中敲击 java  -version 查看版本
+如果这个命令运行不了，就需要配置环境变量。
+
+windows:我的电脑-->属性-->高级系统设置-->环境变量-->path:(C:\Program Files (x86)\Java\jdk1.7.0_09\bin)
+
+
+3.编写第一个Java程序
+
+//java是个纯面向编程语言,class来定义一个类,把对象归纳成类
+public class TestOne {
+
+     //运行类，main函数，严格规定,不能有任何的变动
+	public static void main(String args[]) 
+	{
+	
+	    //输出函数
+		System.out.println("这是java的第一个程序");
+	}
+
+}
+
+4.java程序的编译期间和运行期间
+
+javac是把一个java源文件编译成一个.class文件 ，.class是个字节码文件，是JVM的可执行文件。
+
+注意：可能编译不通过，结果是没有生成.class.
+
+java是运行.class文件，运行期间，运行也有可能运行成功或运行不成功。
+
+java是个编译型语言。
+
+5.java的开发工具  eclipse
+
+解压，目录上不要有中文，直接在根目录下。
+建立一个工作区(代码存放的区域)，选择这个区域，相对应的建立java project和java
+
+设置java开发模版和快捷键。
+
+
+
+
