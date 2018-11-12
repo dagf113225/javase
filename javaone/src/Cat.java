@@ -12,11 +12,12 @@ public class Cat
 		//this表示当前对象，表示，谁调用this就代表谁
 		System.out.println(this.name+",颜色为:"+this.color);
 	}
-	
-	public static  void  show()
-	{
-		System.out.println(this.name+",颜色为:"+this.color);
-	}
+	 
+	//this不能使用在静态方法
+//	public static  void  show()
+//	{
+//		System.out.println(this.name+",颜色为:"+this.color);
+//	}
 	
 	public static void main(String[] args)
 	{
