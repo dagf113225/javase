@@ -1,0 +1,186 @@
+给定如下java代码程序片断：
+
+       class A{
+
+              public A(){
+
+                     System.out.println(“A”);
+
+              }
+
+       }
+
+ 
+
+       class B extends A{
+
+              public B(){
+
+                     System.out.println(“B”);
+
+              }
+
+ 
+
+              public static void main(String[] args){
+
+                     B b=new B();
+
+              }
+
+       }
+输出什么?
+--------------------------------------------------------------------
+public class Test{
+
+   static int i;
+
+   public int test(){
+
+    i++;
+
+     return i;
+
+  }
+
+public static void main(String args[]){
+
+ Test test=new Test();
+
+  test.test();
+
+   System.out.println(test.test());
+
+  }
+
+}
+--------------------- 
+4)
+
+给定JAVA代码如下，关于super的用法,以下描述正确的是( )（单选）
+
+ 
+
+ 
+
+class C extends B
+
+{
+
+    public C()
+
+    {
+
+         super();
+
+    }
+
+}
+
+ 
+
+a)用来调用类B中定义的super()方法
+b)用来调用类C中定义的super()方法
+c)用来调用类B中的无参构造方法
+d)用来调用类B中第一个出现的构造方法
+
+
+1、列选项中哪个是类public class Test { }的默认构造方法___?（知识点：构造器）
+
+          A. Test();
+
+          B.Test(void);
+
+          C.public Test();
+
+          D.public Test(void);
+
+          E.public void Test();
+--------------------------------------------------------------------
+2、给定下列代码的执行结果是____?（知识点：构造器）
+
+                   public class A {
+
+                      void A() {
+
+                          System.out.println(“Class A”);
+
+                      }           
+
+                      public static void main(String[] args) {
+
+                           new A();
+
+                       }
+
+                  }
+
+ A.  Class A            B. 在第2行处抛出异常
+
+ C.  编译错误          D. 在第6行处抛出异常
+
+ E.   代码执行后没有输出
+
+------------------------------------------------------------------------
+3、给定以下代码 ：       （知识点：构造器）
+
+         1. public class ConstOver {
+
+         2.public ConstOver (int x, int y, int z) {
+
+         3. }
+
+         4. }
+
+  下列选项中，哪些可以在ConsOver类中定义成重载的构造方法____:
+
+          A. ConstOver ( ) { }
+
+          B. intConstOver ( ) { }
+
+          C.ConstOver (int z, int y, byte x) { }
+
+          D.Object ConstOver (int x, int y, int z) { }
+
+          E. voidConstOver (byte x, byte y, byte z) { }
+
+ 
+--------------------- ---------------------------------------------
+1．（1）定义一个人类Person：（知识点：对象的创建和使用）
+
+    1)定义一个方法sayHello()，可以向对方发出问候语“hello,my name is XXX”
+
+    2)有三个属性：名字、身高、体重
+
+  （2）定义一个PersonCreate类：
+
+         1）创建两个对象，分别是zhangsan，1.73，55；lishi，1.80，65
+
+         2）分别调用对象的sayHello()方法。
+
+ 
+
+2．（1）定义一个人类Person3：（知识点：对象的创建和使用）
+
+    1)定义一个方法sayHello()，可以向对方发出问候语“hello,my name is XXX”
+
+2)有三个属性：名字、身高、体重
+
+3)通过构造方法，分别给三个属性赋值
+
+  （2）定义一个Constructor类：
+
+         1）创建两个对象，分别是zhangsan，1.73，55；lishi，1.80，65
+
+         2）分别调用对象的sayHello()方法。
+
+ 
+
+3．（1）定义一个矩形类Rectangle：
+
+    1)定义三个方法：getArea()求面积、getPer()求周长，showAll()分别在控制台输出长、宽、面积、周长。
+
+2)有2个属性：长length、宽width
+
+3)通过构造方法Rectangle(int width, int length)，分别给两个属性赋值
+
