@@ -1,0 +1,106 @@
+ 1 public class TempTest {
+ 2     private void test1(int a){
+ 3         a = 5;
+ 4         System.out.println("test1方法中的a="+a);
+ 5     }
+ 6     public static void main(String[] args) {
+ 7         TempTest t = new TempTest();
+ 8         int a = 3;
+ 9         t.test1(a);
+10         System.out.println(”main方法中的a=”+a);
+11     }
+12 }
+-------------------------------------------------------------------
+ 1  public class TempTest {
+ 2      private void test1(A a){
+ 3          a.age = 20;
+ 4          System.out.println("test1方法中的age="+a.age);
+ 5      }
+ 6      public static void main(String[] args) {
+ 7          TempTest t = new TempTest();
+ 8          A a = new A();
+ 9          a.age = 10;
+10          t.test1(a);
+11          System.out.println(”main方法中的age=”+a.age);
+12      }
+13  }
+14  class A{
+15      public int age = 0;
+16  }
+--------------------------------------------------------------------
+public class Test
+{
+	String a = "123";
+	public static void test(Test test)
+	{
+		test.a = "abc";
+	}
+ 
+	public static void main(String[] args)
+	{
+		Test test1 = new Test();
+		test1.a = "567";
+		System.out.println(test1.a); 
+		
+		test(test1);
+		System.out.println(test1.a); 
+		
+	}
+}
+---------------------------------------------------------------------
+public class Test
+{
+	public static void test(String str)
+	{
+		str = "word";
+	}
+ 
+	public static void main(String[] args)
+	{
+		String string = "hello";
+		System.out.println(string);  
+		test(string);
+		System.out.println(string);  
+	}
+}
+----------------------------------------------------------------------\
+public class Test  不写
+{
+	public static void test(StringBuffer str)
+	{
+		str.append("world");
+	}
+	public static void main(String[] args)
+	{	
+		StringBuffer str = new StringBuffer("hello");
+		System.out.println(str);  
+		test(str);
+		System.out.println(str);
+	}
+}
+----------------------------------------------------------------------
+
+public static void change(String s) {   
+    s = “123”;  
+}   
+  
+public static void main(String args[]) {   
+    String s = “abc”;   
+    change(s);   
+    System.out.println(s);
+}
+---------------------------------------------------------------------
+public static void change(int i, int j) {  
+      int temp = i;  
+      i =j;  
+      j =temp; 
+}  
+ 
+public static void main(String[] args) {  
+      int a = 3;  
+      int b = 4;  
+      change(a,b);  
+      System.out.println(a);  
+      System.out.println(b); 
+}  
+--------------------------------------------------------------------
