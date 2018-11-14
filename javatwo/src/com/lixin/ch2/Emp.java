@@ -1,21 +1,13 @@
 package com.lixin.ch2;
 
-public class Emp 
+public class Emp  extends Person
 {
-	//姓名
-	String name;
+	//工资
+	double salary;
 	
-	//年龄
-	int  age;
-	
-	
-	public void setName(String name)
+	public void  setSalary(double salary)
 	{
-		this.name=name;
-	}
-	public String  getName()
-	{
-		return  this.name;
+		this.salary=salary;
 	}
 
 }

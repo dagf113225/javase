@@ -1,23 +1,13 @@
 package com.lixin.ch2;
 
-public class Stu 
+public class Stu   extends Person
 {
-	
-	//姓名
-	String name;
-	
-	//年龄
-	int  age;
-	
-	
-	public void setName(String name)
-	{
-		this.name=name;
-	}
-	public String  getName()
-	{
-		return  this.name;
-	}
-
+	//分数
+   float  score;
+   
+   public void  setScore(float  score)
+   {
+	   this.score=score;
+   }
 
 }
