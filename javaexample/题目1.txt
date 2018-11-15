@@ -1,0 +1,162 @@
+1. public class LJXQ {
+	public static void main(String[] args) {
+ 
+		A a = new A();
+		B b = new B();
+		C c = new C();
+		D d = new D();
+		System.out.println(a.get(a) + " - " + a.get(d) + " - " + a.get(b) + " - " + b.get(a) + " - " + b.get(c) + " - "
+				+ b.get(d));
+	}
+ 
+}
+ 
+class A {
+	String get(D d) {
+		return "AD";
+	}
+ 
+	String get(A a) {
+		return "AA";
+	}
+}
+ 
+class B extends A {
+	String get(A a) {
+		return "BA";
+	}
+ 
+	String get(B b) {
+		return "BB";
+	}
+}
+ 
+class C extends B {
+}
+ 
+class D extends B {
+}
+--------------------------------------------------------------------------
+2.  package com.test;
+class Father{
+int x = 1;
+public Father(){
+System.out.println("father");
+}
+public Father(String s){
+System.out.println("father:"+s);
+}
+}
+
+
+class Son extends Father{
+int x = 2;
+public Son(){
+System.out.println("son");
+}
+public Son(String s){
+System.out.println("son:"+s);
+}
+}
+
+
+public class Test{
+
+public static void main(String[] args)
+{
+
+     Son f = new Son();
+    System.out.println(f.x);
+}
+}
+-------------------------------------------------------------------------
+
+3.  public class A {    
+    public int a = 0;
+    public void fun(){
+        System.out.println("-----A-----");
+    }
+}
+
+public class B extends A{
+    public int a = 1;
+    public void fun(){
+        System.out.println("-----B-----");
+    }
+
+public static void main(String[] args){
+        A classA = new B();     
+        System.out.println(classA.a);
+        classA.fun();
+    }   
+}
+--------------------------------------------------------------------------
+4.  class A {  
+      public void show() {  
+               show2();  
+       }  
+     public void show2() {  
+             System.out.println("我");   
+       }  
+}  
+class B extends  A {  
+         pu;blic void show2() {  
+              System.out.pritnln("爱");  
+          }  
+}  
+class C extends B {  
+          public void show() {  
+               super.show();  
+           }  
+           public void show2() {  
+                 System.out.println("你");  
+           }  
+}  
+public  class  ABC {  
+            public static void main(String[] args) {  
+                  A  a = new B();  
+                  a.show();  
+  
+                  B  b = new C();  
+                  b.show();  
+            }  
+----------------------------------------------------------------------
+
+5. class A {
+    public String run(D obj) {
+        return ("A & D");
+    }
+ 
+    public String run(A obj) {
+        return ("A & A");
+    }
+}
+class B extends A {
+    public String run(B obj) {
+        return ("B & B");
+    }
+    public String run(A obj) {
+        return ("B & A");
+    }
+}
+class C extends B {}
+class D extends B {}
+public class Test {
+	public static void main(String[] args) {
+		A aa = new A();
+		A ab = new B();
+		B b = new B();
+		C c = new C();
+		D d = new D();
+		System.out.println("1--" + aa.run(b));
+		System.out.println("2--" + aa.run(c));
+		System.out.println("3--" + aa.run(d));
+		System.out.println("4--" + ab.run(b));
+		System.out.println("5--" + ab.run(c));
+		System.out.println("6--" + ab.run(d));
+		System.out.println("7--" + b.run(b));
+		System.out.println("8--" + b.run(c));
+		System.out.println("9--" + b.run(d));
+	}
+}
+
