@@ -7,17 +7,14 @@ public class Base
 
 	static int b;
 	
-	int a1;
-
-	int b1;
+	
 
 	public Base()
 	{
 
 		a = 1;
 		b = 1;
-		a1=10;
-		b1=10;
+	
 
 	}
 
