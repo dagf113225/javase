@@ -33,7 +33,9 @@ public class Son extends Base
 		base.addA();
 		System.out.println(son.a+","+son.b);// 8,2
 		
-		son.addB();
+		//静态方法也叫做类方法，是属于哪个类，而不属于哪个对象，所以决定调用哪个静态方法，
+		//是由声明的对象来决定的
+		base.addB();
 		System.out.println(son.a+","+son.b);// 8,7
 		
 	}
