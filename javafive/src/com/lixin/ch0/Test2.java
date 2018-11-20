@@ -19,7 +19,8 @@ public class Test2
 
 			// 2.连接数据库 url:jdbc:mysql://数据库ip地址:3306/数据库名
 			Connection conn = DriverManager.getConnection(
-					"jdbc:mysql://127.0.0.1:3306/thzmdb2", "root", "123456");
+					"jdbc:mysql://127.0.0.1:3306/thzmdb2", 
+					"root", "123456");
 
 			System.out.println("conn-->" + conn);
 		}
