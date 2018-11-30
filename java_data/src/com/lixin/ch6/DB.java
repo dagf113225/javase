@@ -41,6 +41,9 @@ public class DB
 		try
 		{
 			PreparedStatement  pstmt=conn.prepareStatement(sql);
+			
+			Integer.parseInt("a");
+			
 			pstmt.setString(1, name);
 			
 			ResultSet  rs=pstmt.executeQuery();
@@ -55,7 +58,18 @@ public class DB
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		
+		finally
+		{
+			try
+			{
+				conn.close();
+			}
+			catch (SQLException e)
+			{
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}
 		
 	}
 	
