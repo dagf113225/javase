@@ -2,8 +2,10 @@ package com.lixin.lesson22;
 /**
  * 线程之间交换数据
  * 1.主线程传递数据子线程  通过构造函数
- * 2.子线程传递数据主线程   必须在synchronized，使用notify
+ * 2.子线程传递数据主线程   必须在synchronized，使用wait----(同一个对象锁)---notify,
  * 2.子线程传递数据子线程
+ * 
+ * 
  * 
  * 
  * @author lenovo
