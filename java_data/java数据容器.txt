@@ -20,4 +20,46 @@ Java数据容器
    增强遍历[foreach]for(类型 值:数组){}  注意jdk版本
 
 2.JavaBean
+   
+    JavaBean也是一个数据容器，是存放一个对象的数据容器
+    可以重复使用，作用是明显。
+
 3.集合
+
+      集合的作用是为了简化数组操作的复杂度，提高Java处理数据的方便性，
+ Java集合的分类:
+ 1.Collection接口
+  
+ 1.1
+   List接口  存储数据的特点:有序，可以重复
+   
+   ArrayList:底层都是数组实现，线程非安全，性能好，遍历快，插入和删除慢
+   Vector:底层都是数组实现，线程安全，性能弱
+   LinekedList:底层是采用双向链表，链表的结构决定了，遍历慢，插入和删除快
+   在相同条件下，LinekedList遍历应采用迭代器。
+   
+ 1.2
+   Set接口 存储数据的特点:无序，不可以重复
+   Set接口的实现子类:HashSet,TreeSet
+    HashSet过滤重复：基本数据和String类型
+    
+    自定义对象，不能过滤重复，需要过滤重复:
+    1.重写Hashcode方法,即使Hashcode的值一样，也不能认为是重复对象
+    ，必须要比较equals
+    2.重写equals方法，选择业务需要的属性进行判断
+   
+   TreeSet是经过排序的，自定义对象必须要首先排序，
+   排序必须首先实现Comparable接口，必须实现ComparTo方法
+   排序的规则选用需求需要的可以排序的属性。
+   
+ 
+ 2.Map接口 键值对     {} 
+ 
+ HashMap
+ Hashtable
+ ConcurrentHashMap  安全性和性能 
+ 
+ 
+   
+   
+   
