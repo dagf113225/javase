@@ -43,9 +43,12 @@ public class Test
 			//怎么判断这个人有没有权限呢 ?
 			//System.out.println(lists.contains(fun));
 			
+			//全部匹配
 			if(lists.contains(fun))
 			{
 				System.out.println(username+",可以执行"+fun);
+				
+				
 				//面向对象很难去实现我们执行权限业务方法的意图
 				//ExecAction  ea  = new ExecAction();
 				//ea.updatePwd();

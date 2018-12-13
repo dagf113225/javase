@@ -11,6 +11,11 @@ public class Test1
 	{
 		// f这个文件对象表示了aa这个目录
 		File[] fs = f.listFiles();
+		
+		if(null==fs)
+		{
+			return;
+		}
 
 		for (File fa : fs)
 		{

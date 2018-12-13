@@ -1,0 +1,10 @@
+        
+              192.168.43.69|1521|oracle.jdbc.driver.OracleDriver|jdbc:oracle:thin:@127.0.0.1|XE|student|student
+                                  
+                                  
+                                         质量部|999999|
+                         安全部|666666|
+
+
+技术部|555555|
+                    人力资源部|444444|
