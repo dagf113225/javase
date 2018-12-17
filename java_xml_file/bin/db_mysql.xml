@@ -1,0 +1,10 @@
+<?xml version="1.0"  encoding="utf-8"?>
+<dbs>
+   <conn>
+     <driver>com.mysql.jdbc.Driver</driver>
+     <url>jdbc:mysql://127.0.0.1:3306/thzmdb2</url>
+     <username>root</username>
+     <password>123456</password>
+   </conn>
+
+</dbs>

@@ -1,0 +1,7 @@
+<?xml version="1.0"  encoding="utf-8"?>
+<actions>
+  <action  url="userlogin"  class="com.lixin.user.action.UserAction">
+  </action>
+  <action  url="admin"  class="com.lixin.admin.action.AdminAction">
+  </action>
+</actions>

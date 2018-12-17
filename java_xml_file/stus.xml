@@ -1,0 +1,15 @@
+<?xml version="1.0"  encoding="utf-8"?>
+<root>
+    <stu  id="100">
+      <name>王启明      </name>
+      <age>22</age>
+    </stu>
+    <stu  id="101">
+      <name>袁信莉</name>
+      <age>18</age>
+    </stu>
+    <stu  id="102">
+      <name>孙婕</name>
+      <age>18</age>
+    </stu>
+</root>

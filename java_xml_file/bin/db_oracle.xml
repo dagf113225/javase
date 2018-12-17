@@ -1,0 +1,10 @@
+<?xml version="1.0"  encoding="utf-8"?>
+<dbs>
+   <conn>
+     <driver>oracle.jdbc.driver.OracleDriver</driver>
+     <url>jdbc:oracle:thin:@127.0.0.1:1521:XE</url>
+     <username>student</username>
+     <password>student</password>
+   </conn>
+
+</dbs>
