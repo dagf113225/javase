@@ -1,0 +1,46 @@
+快递:key=03a19830e33c78e3
+https://www.kuaidi100.com/openapi/api_post.shtml
+
+
+　一直挺喜欢使用百度音乐来听音乐，不过非VIP用户只能收听 128 kbps 音质的音乐。
+这对于我这个喜欢高品质音乐的人来说是不能容忍的。于是我就研究了下，
+终于能下载只有 VIP 才能下载的高品质 320 kbps 的音乐了。
+
+　　1. 首先在百度音乐盒中找到你想听的音乐 
+　　2. 然后点击歌曲旁边的下载按钮，此时会弹出一个下载窗口 
+　　3. 查看下载窗口的源文件，并搜索 “song_id” 关键字，会看到类似如下的信息： 
+　　song_id: "xxxxx"   242078437
+
+type_id “*****”   267778516
+
+data-songid="610370676"
+
+　　4. 访问如下 API： 
+　　http://ting.baidu.com/data/music/links?songIds=[步骤3中得到的 song id]&rate=320 
+　　例如： http://ting.baidu.com/data/music/links?songIds=601427388&rate=320 
+
+http://zhangmenshiting.qianqian.com/data2/music/51ae2795f1942cd4eb8fc06bf79e857b/601427394/60142738843200320.mp3?xcode=84c1563cd2b5218e3cbb1604e4436b22
+
+　例如： http://ting.baidu.com/data/music/links?songIds=7316465&rate=320 
+
+http://ting.baidu.com/data/music/links?songIds=289109745&rate=320 
+http://yinyueshiting.baidu.com/data2/music/559f92561ca0072ec7b5e56deb7b3034/289109976/28910974532400128.mp3?xcode=793ab279617019bc7e919dd56dd3c83c
+ 
+ 
+ http://ting.baidu.com/data/music/links?songIds=40153340&rate=320 
+　　5. 在步骤4中返回的 JSON 结果中，找到 “showLink”，得到类似如下的值： 
+　　http:\/\/zhangmenshiting.baidu.com\/data2\/music\/8349344\/73273321370919661.mp3?xcode=1ea39b6451398b81b82fa4f3e4860d7587d61a6e394a17dc 
+　　6. 删除上述 url 中所有的 "\"，得到如下结果： 
+　　http://zhangmenshiting.baidu.com/data2/music/8349344/73273321370919661.mp3?xcode=1ea39b6451398b81b82fa4f3e4860d7587d61a6e394a17dc 
+　　7. 访问上述地址，开始下载吧！ 
+
+　　注意：最终得到的下载地址是有有效期的。具体有效期时间是多长，我也并没有研究。网上有说大概 10 几个小时的。不过估计不会超过一天。 
+　　rate：目前的有效值是 128 或 320
+
+
+	<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js"></script>
+
+
+
+
