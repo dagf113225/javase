@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animals>
+
+  <animal  id="狗"  class="com.lixin.model4.Dog"></animal>
+  <animal  id="猫"   class="com.lixin.model4.Cat"></animal>
+  <animal  id="羊"   class="com.lixin.model4.Sheep"></animal>
+  <animal  id="猪"   class="com.lixin.model4.Pig"></animal>
+</animals>
