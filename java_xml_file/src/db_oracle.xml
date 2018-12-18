@@ -6,5 +6,15 @@
      <username>student</username>
      <password>student</password>
    </conn>
-
+   <sqls>
+     <sql>
+     <name>queryempmoney </name>
+     <value>SELECT  ename, esalary+nvl(money,0) FROM   t_emp  </value>
+     </sql>
+     
+      <sql>
+     <name>queryeemp</name>
+     <value>select *  from   (select  rownum  rm,  e.*  from  t_emp   e   where rownum &lt;=?)  tmp  where tmp.rm &gt;?</value>
+     </sql>
+   </sqls>
 </dbs>

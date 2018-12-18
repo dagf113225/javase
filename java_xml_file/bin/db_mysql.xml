@@ -6,5 +6,16 @@
      <username>root</username>
      <password>123456</password>
    </conn>
-
+   
+   <sqls>
+     <sql>
+     <name>queryempmoney</name>
+     <value>SELECT  ename, esalary+IFNULL(money,0) FROM   t_emp </value>
+     </sql>
+      <sql>
+     <name>queryeemp</name>
+     <value>SELECT  * FROM  t_emp  LIMIT  ?,? </value>
+     </sql>
+     
+   </sqls>
 </dbs>

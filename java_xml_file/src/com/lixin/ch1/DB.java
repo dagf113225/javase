@@ -14,6 +14,7 @@ import org.dom4j.DocumentException;
 import org.dom4j.Element;
 import org.dom4j.io.SAXReader;
 
+//不改动java代码，能够满足用户对任一数据库产品的需求
 //单例模式，一对夫妻只生一个儿子
 public class DB
 {
